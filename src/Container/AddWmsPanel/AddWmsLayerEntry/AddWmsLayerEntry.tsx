@@ -4,7 +4,8 @@ import { Attribution as OlAttribution } from 'ol/source/Source';
 
 import { Checkbox, Tooltip } from 'antd';
 
-import { Icon } from 'react-fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { Icon } from 'react-fa';
 
 import { WmsLayer } from '../../../Util/typeUtils';
 import './AddWmsLayerEntry.less';
@@ -97,13 +98,13 @@ export class AddWmsLayerEntry extends React.Component<AddWmsLayerEntryProps, Add
           {layerTextSpan}
           {
             copyright
-              ? <Icon className="add-wms-add-info-icon" name="copyright" aria-label="attribution-info" />
+              ? <FontAwesomeIcon className="add-wms-add-info-icon" icon="copyright" aria-label="attribution-info" />
               : null
           }
           {
             queryable
               ? <Tooltip title={layerQueryableText}>
-                <Icon className="add-wms-add-info-icon" name="info" aria-label="queryable-info" />
+                <FontAwesomeIcon className="add-wms-add-info-icon" icon="info" aria-label="queryable-info" />
               </Tooltip>
               : null
           }

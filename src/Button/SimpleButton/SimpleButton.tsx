@@ -5,7 +5,8 @@ import { Button, Tooltip } from 'antd';
 import { TooltipPlacement, AbstractTooltipProps } from 'antd/lib/tooltip';
 import { ButtonProps } from 'antd/lib/button';
 
-import Icon from 'react-fa/lib/Icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import Icon from 'react-fa/lib/Icon';
 
 import { CSS_PREFIX } from '../../constants';
 
@@ -98,7 +99,7 @@ class SimpleButton extends React.Component<SimpleButtonProps> {
       iconToRender = icon;
     }
     if (iconName) {
-      iconToRender = <Icon name={iconName}/>;
+      iconToRender = <FontAwesomeIcon icon={iconName}/>;
     }
 
     return (
