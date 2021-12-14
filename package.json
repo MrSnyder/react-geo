@@ -1,6 +1,6 @@
 {
   "name": "@terrestris/react-geo",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "description": "A set of geo related modules. To use in combination with react, antd and ol.",
   "license": "BSD-2-Clause",
   "author": "terrestris GmbH & Co. KG <info@terrestris.de>",
@@ -70,10 +70,10 @@
     "build": "npm run test -- --coverage && npm run build:all"
   },
   "peerDependencies": {
-    "@types/react": "^16.0",
-    "antd": "^4.0",
-    "ol": "^6.6",
-    "react": "^16.9"
+    "@types/react": "^17.0.37",
+    "antd": "^4.17.3",
+    "ol": "^6.9.0",
+    "react": "^17.0.2"
   },
   "dependencies": {
     "@ag-grid-community/client-side-row-model": "^23.2.1",
