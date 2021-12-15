@@ -11,7 +11,7 @@ node_modules
 
 # Build & dist folders
 /build
-/dist
+#/dist
 
 # Coverage folder
 /coverage
