@@ -5,14 +5,14 @@ import { Button, Tooltip } from 'antd';
 import { TooltipPlacement, AbstractTooltipProps } from 'antd/lib/tooltip';
 import { ButtonProps } from 'antd/lib/button';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import Icon from 'react-fa/lib/Icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { CSS_PREFIX } from '../../constants';
 
 import logger from '@terrestris/base-util/dist/Logger';
 
 import './SimpleButton.less';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 interface DefaultProps {
   type: 'default' | 'primary' | 'ghost' | 'dashed' | 'danger' | 'link';
@@ -34,7 +34,7 @@ interface BaseProps {
   /**
    * The name of the fa icon. Set either the icon node or the name of the icon.
    */
-  iconName?: string;
+  iconName?: IconProp;
   /**
    * The tooltip to be shown on hover.
    */

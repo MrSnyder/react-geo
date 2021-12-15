@@ -5,7 +5,8 @@ import {
   Button,
   Tooltip
 } from 'antd';
-import { Icon } from 'react-fa';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import _isFunction from 'lodash/isFunction';
 
@@ -15,6 +16,7 @@ import { CSS_PREFIX } from '../../constants';
 import { AbstractTooltipProps, TooltipPlacement } from 'antd/lib/tooltip';
 import { SimpleButtonProps } from '../SimpleButton/SimpleButton';
 import logger from '@terrestris/base-util/dist/Logger';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 interface DefaultProps {
   type: 'default' | 'primary' | 'ghost' | 'dashed' | 'danger' | 'link';
@@ -48,7 +50,7 @@ interface BaseProps {
    * The name of the fa icon for the pressed state. Set either the icon node or
    * the name of the icon.
    */
-  pressedIconName?: string;
+  pressedIconName?: IconProp;
   /**
    * The tooltip to be shown on hover.
    */
@@ -281,7 +283,7 @@ class ToggleButton extends React.Component<ToggleButtonProps, ToggleButtonState>
       iconToRender = icon;
     }
     if (iconName) {
-      iconToRender = <Icon name={iconName}/>;
+      iconToRender = <FontAwesomeIcon icon={iconName}/>;
     }
 
     if (pressedIcon && pressedIconName) {
@@ -294,7 +296,7 @@ class ToggleButton extends React.Component<ToggleButtonProps, ToggleButtonState>
       pressedIconToRender = pressedIcon;
     }
     if (pressedIconName) {
-      pressedIconToRender = <Icon name={pressedIconName}/>;
+      pressedIconToRender = <FontAwesomeIcon icon={iconName}/>;
     }
 
     return (

@@ -4,8 +4,7 @@ import { Attribution as OlAttribution } from 'ol/source/Source';
 
 import { Checkbox, Tooltip } from 'antd';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { Icon } from 'react-fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { WmsLayer } from '../../../Util/typeUtils';
 import './AddWmsLayerEntry.less';
